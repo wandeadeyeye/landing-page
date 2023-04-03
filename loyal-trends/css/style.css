@@ -1,0 +1,100 @@
+/* navbar section */
+
+.navbar {
+    border-bottom: 3px solid #363062;
+}
+
+.navbar .navbar-brand {
+    color: #363062;
+    font-size: 1000;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 700;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar .nav-link:hover {
+    color: #363062;
+}
+
+.navbar .navbar {
+    border-bottom: none;
+}
+
+.navbar .btn {
+    color: #363062;
+    border-color: #363062;
+}
+
+.navbar .btn:hover {
+    color: #363062;
+}
+
+
+/* items list section */
+
+.box{
+    margin: 20px;
+    padding: 20px;
+}
+  
+.box > img{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0, 5) 0px 5px 15px, inset rgba(0, 0, 0, 15) 0px -10px 20px;
+    grid-template: 1fr / repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+/* footer section */
+
+#footer{
+    background-color: rgb(61, 60, 60);
+    width: 100%;
+}
+
+#footer .container{
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials{
+    margin: 20px 0;
+}
+
+.socials a{
+    color: aliceblue;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.content .h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#footer .container ,.content{
+    padding: 10px 20px;
+    color: aliceblue;
+}
+
+.second{
+    margin-left: 180px;
+}
