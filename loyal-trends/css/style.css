@@ -13,6 +13,7 @@
 
 
 .navbar .nav-link {
+    margin-left: 40px;
     color: #fff;
     font-size: 700;
     font-weight: 500;
@@ -36,27 +37,8 @@
     color: #363062;
 }
 
+/* card section */
 
-/* items list section */
-
-.box{
-    margin: 20px;
-    padding: 20px;
-}
-  
-.box > img{
-    width: 100%;
-}
-
-.container{
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0, 5) 0px 5px 15px, inset rgba(0, 0, 0, 15) 0px -10px 20px;
-    grid-template: 1fr / repeat(auto-fit, minmax(200px,1fr));
-    grid-gap: 20px;
-    padding: 20px;
-    text-align: center;
-    
-}
 
 
 /* footer section */
@@ -64,37 +46,4 @@
 #footer{
     background-color: rgb(61, 60, 60);
     width: 100%;
-}
-
-#footer .container{
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.socials{
-    margin: 20px 0;
-}
-
-.socials a{
-    color: aliceblue;
-    margin-right: 25px;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-.content .h2{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-
-#footer .container ,.content{
-    padding: 10px 20px;
-    color: aliceblue;
-}
-
-.second{
-    margin-left: 180px;
 }
