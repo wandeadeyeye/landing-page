@@ -39,7 +39,125 @@
 
 /* card section */
 
+#team {
+    background: linear-gradient(#ff51eb, #ff51eb);
+}
 
+#team .cards .items {
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #0c9c43;
+}
+
+.cards .items {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    height: 500px;
+    background: linear-gradient(#2196f3, #2196f3 30%, #1d3548 30%, #1d3548);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.cards .items {
+    width: 340px;
+    border: 5px dotted #ff51eb;
+}
+.cards .items .imagebx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 100000;
+    border-radius: 10px;
+    overflow: hidden;
+    transform-origin: top;
+}
+
+.cards .items:hover .imagebx {
+    transform: translateY(30px) scale(0.5);
+}
+
+.cards .items .imagebx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards .items .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+.cards .items:hover .content {
+    transform: translateY(0);
+}
+
+.cards .items .content .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cards .items .content .details h2 {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.cards .items .content .details span {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #03a9f4;
+}
+
+.socials {
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+}
+
+.socials li {
+    margin: 4px;
+    list-style: none;
+}
+
+.socials li a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #294d69;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    /* margin-left: 10px; */
+}
+
+
+.socials li a:hover {
+    transform: rotate(360deg);
+    background: #2196f3;
+}
 
 /* footer section */
 
