@@ -346,6 +346,13 @@
 
 
     <!-- scripts -->
-    <script src="bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".subs"), {
+      max: 25,
+      speed: 100,
+    });
+  </script>
   </body>
 </html>
