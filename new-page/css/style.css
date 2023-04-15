@@ -71,15 +71,18 @@ button:hover {
     position: absolute;
     top: 50%;
     left: 50%;
+    border: 2px solid #fff;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: #fff;
+    background: transparent;
+    backdrop-filter: blur(20px);
     border-radius: 10px;
 }
 
 .center h1 {
     text-align: center;
-    padding: 0 0 20px 0;
+    color: #adadad;
+    padding: 20px 0 20px 0;
 }
 
 .center form {
@@ -100,6 +103,14 @@ form .txt_field {
     border: none;
     outline: none;
     background: none;
+}
+
+.txt_field .icon{
+    position: absolute;
+    left: 300px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 50px;
 }
 
 .txt_field label {
@@ -135,12 +146,25 @@ form .txt_field {
 }
 
 .pass {
-    margin: -5px 0 20px 5px;
-    color: #a6a6a6;
-    cursor: pointer;
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.pass:hover {
+.pass label input {
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.pass a {
+    color: #162938;
+    text-decoration: none;
+}
+
+.pass a:hover {
     text-decoration: underline;
 }
 
@@ -149,7 +173,7 @@ input[type="submit"] {
     height: 50px;
     border: 1px solid;
     background: #2691d9;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 18px;
     color: #e9f4fb;
     font-weight: 700;
@@ -167,6 +191,7 @@ input[type="submit"]:hover {
     text-align: center;
     font-size: 16px;
     color: #666666;
+    cursor: pointer;
 }
 
 .sign_up a {
