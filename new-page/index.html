@@ -28,21 +28,30 @@
         <h1>Login</h1>
         <form action="" method="post">
             <div class="txt_field">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
                 <input type="text" required>
                 <label for="">Username</label>
                 <span></span>
             </div>
             <div class="txt_field">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                 <input type="password" required>
                 <label for="">Password</label>
                 <span></span>
             </div>
-            <div class="pass">Forgot Password?</div>
+            <div class="pass">
+                <label><input type="checkbox">
+                Remember me</label>
+                <a href="">forgot password?</a>
+            </div>
             <input type="submit" value="Login">
             <div class="sign_up">
-                Not a member? <a href="">Signup</a>
+               Not a member? <a href="">Signup</a>
             </div>
         </form>
     </div>
+    <!-- script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
