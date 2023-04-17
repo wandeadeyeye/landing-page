@@ -58,21 +58,21 @@
 }
 
 .head .headtext {
-    padding: 5px;
+    padding: 4px;
     position: relative;
-    max-width: 850px;
+    max-width: 500px;
     cursor: pointer;
 }
 
-.head .headtext h1 {
+.head .headtext h2 {
     color: #333;
     font-size: 4em;
-    line-height: 1.1em;
+    line-height: 1.2em;
     font-weight: 450;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.head .headtext h1 span {
+.head .headtext h2 span {
     color: #ff77cd;
     font-weight: 550;
 }
@@ -91,6 +91,9 @@
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
+}
+
+.head .headtext a:hover {
     box-shadow: linear-gradient(45deg, #87adfe, #ff77cd);
 }
 
@@ -102,6 +105,10 @@
     margin-top: 60px;
 }
 
+.head .headimg img {
+    width: 500px;
+    display: flex;
+}
 
 .circle {
     position: absolute;
@@ -148,6 +155,15 @@
     opacity: 0;
     cursor: pointer;
   }
+  .cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
   
   .cards:hover .contents {
     opacity: 1;
@@ -168,7 +184,7 @@
     column-gap: 20px;
   }
   
-  .icons a{
+  .icons a {
     color: #fff;
   }
   
@@ -200,8 +216,8 @@
   
   .cards:before {
     background: url(../assets/background.jpg), no-repeat;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: .5rem;
+    right: .5rem;
   }
   
   .cards:after {
@@ -220,13 +236,13 @@
   }
   
   .cards:hover:before {
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
   }
   
   .cards:hover:after {
-    top: 2rem;
-    left: 2rem;
+    top: 1rem;
+    left: 1rem;
   }
 
 
@@ -480,4 +496,43 @@
 #footer{
     background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
     width: 100%;
+}
+
+
+/* general responsive */
+
+@media screen and (max-width: 1400px){
+    #header{
+        background-size: 1400px 100vh;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #header{
+        background-size: 1200px 100vh;
+    } 
+}
+
+@media screen and (max-width: 992px){
+    #header{
+        background-size: 992px 100vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #header{
+        background-size: 768px 100vh;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #header{
+        background-size: 576px 100vh;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #header{
+        background-size: 576px 100vh;
+    }
 }
