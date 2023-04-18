@@ -41,15 +41,15 @@
 /* head section */
 
 
-#header {
+/* #header {
     width: 100%;
     height: 100vh;
     background: url(../assets/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
-.head {
+/* .head {
     position: relative;
     width: 100%;
     display: flex;
@@ -118,7 +118,7 @@
     height: 84.5%;
     background: linear-gradient(45deg, #87adfe, #ff77cd);
     clip-path: circle(600px at right 500px);
-}
+} */
 
 
 /* team section */
@@ -502,8 +502,84 @@
 /* general responsive */
 
 @media screen and (max-width: 1400px){
-    #header{
-        background-size: 1400px 100vh;
+
+    #header {
+        width: 100%;
+        height: 80vh;
+        background: url(../assets/background.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .head {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .head .headtext {
+        padding: 4px;
+        position: relative;
+        max-width: 500px;
+        cursor: pointer;
+    }
+    
+    .head .headtext h1 {
+        color: #333;
+        font-size: 4em;
+        line-height: 1.2em;
+        font-weight: 450;
+        margin-bottom: 5px;
+    }
+    
+    .head .headtext h1 span {
+        color: #ff77cd;
+        font-weight: 550;
+    }
+    
+    .head .headtext p {
+        color: #333;
+    }
+    
+    .head .headtext a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 20px;
+        background: linear-gradient(45deg, #87adfe, #ff77cd);
+        color: #fff;
+        border-radius: 40px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+    
+    .head .headtext a:hover {
+        box-shadow: linear-gradient(45deg, #87adfe, #ff77cd);
+    }
+    
+    .head .headpix {
+        width: 600px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5px;
+        margin-top: 60px;
+    }
+    
+    .head .headimg img {
+        width: 500px;
+        display: flex;
+    }
+    
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 84.5%;
+        background: linear-gradient(45deg, #87adfe, #ff77cd);
+        clip-path: circle(600px at right 500px);
     }
 }
 
@@ -528,6 +604,10 @@
 @media screen and (max-width: 576px){
     #header{
         background-size: 576px 100vh;
+    }
+
+    .headimg .headpix {
+        overflow: hidden;
     }
 }
 
