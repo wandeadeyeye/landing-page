@@ -106,19 +106,21 @@
     <!-- header section -->
 
     <header id="header">
-      <div class="container py-3">
+      <div class="container-md-8 py-3">
           <div class="row">
               <div class="col">
                   <div class="head">
                       <div class="headtext">
-                          <h2 class="">Building A Responsive Web Page Using  <span>Bootstrap</span> Frameware</h2>
-                          <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eius reiciendis! Iusto, quisquam inventore, voluptates eligendi consequatur nemo molestias aut cupiditate, quidem exercitationem earum omnis dolorem! Veniam et eaque sequi? </p>
-                          <a href="" class="">Learn More</a>
-                      </div>
-                      <div class="headimg">
-                        <img src="assets/head.png" alt="..." class="headpix">
+                          <h1 class="text-start fs-1 pt-5 fw-normal ms-5 lh-lg">Building A Responsive Web Page Using <span>Bootstrap</span> Frameware</h1>
+                          <p class="text-start ms-5 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eius reiciendis! Iusto, quisquam inventore, voluptates eligendi consequatur nemo molestias aut cupiditate, quidem exercitationem earum omnis dolorem! Veniam et eaque sequi? </p>
+                          <a href="" class="text-start ms-5">Learn More</a>
                       </div>
                   </div>
+              </div>
+              <div class="col">
+                <div class="headimg">
+                  <img src="assets/head.png" alt="..." class="headpix ms-5">
+                </div>
               </div>
           </div>
       </div>
@@ -128,16 +130,16 @@
 
     <!-- team section -->
     
-    <section id="team" class="text-center">
-      <div class="container py-5">
+    <section id="team" class="mt-5 pt-3 text-center">
+      <div class="container">
         <div class="row">
           <div class=""><h4>Meet Our Team</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam fugit magni dolore, facilis expedita a. Dicta similique magni eius nemo provident, nam commodi numquam unde facere fugit animi incidunt exercitationem!</p>
           </div>
-          <div class="col-md-4 py-5">
+          <div class="col-md-4 py-3">
             <div class="cards">
               <div class="card-body">
-                <img src="assets/profile2.jpg" alt="" class="profileimg">
+                <img src="assets/profile11.jpg" alt="" class="profileimg">
                 <div class="contents">
                   <h3>Tim Apple</h3>
                   <h5>Web Developer</h5>
@@ -152,10 +154,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 py-5">
+          <div class="col-md-4 py-3">
             <div class="cards">
               <div class="card-body">
-                <img src="assets/profile1.jpg" alt="" class="profileimg">
+                <img src="assets/profile6.jpg" alt="" class="profileimg">
                 <div class="contents">
                   <h3>Tim Apple</h3>
                   <h5>Web Developer</h5>
@@ -170,10 +172,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 py-5">
+          <div class="col-md-4 py-3">
             <div class="cards">
               <div class="card-body">
-                <img src="assets/profile3.jpg" alt="" class="profileimg">
+                <img src="assets/profile4.jpg" alt="" class="profileimg">
                 <div class="contents">
                   <h3>Tim Apple</h3>
                   <h5>Web Developer</h5>
@@ -195,7 +197,7 @@
 
     <!-- team section -->
 
-    <!-- card section -->
+    <!-- subscription section -->
 
     <section id="price" class="mt-5 pt-5 text-center">
 
@@ -343,14 +345,25 @@
           </div>
           <div class="col-md-4">
             <div class="second content">
-                <h3>Contact Us</h3>
+                <!-- <h3>Contact Us</h3>
                   <label for="exampleInputEmail1" class="form-label">Email *</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required>
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                <div class="second content mb-3">
+                  <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required placeholder=" enter email">
+                    <label><input type="checkbox"> signup for weekly newsletter</label>
+                  </div>
                   <label for="exampleFormControlTextarea1" class="form-label">Feedback *</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="enter messaage" required></textarea>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <div class="second content mb-3">
+                  <input type="text" required placeholder=" enter feedback" row="4">
+                  <input type="btn" type="submit">
+                </div> -->
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </div>
         </div>
