@@ -495,7 +495,163 @@
 
 #footer{
     background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    /* width: 100%;
+    height: 100%; */
+}
+
+/* #footer .container {
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.second {
+    position: relative;
+    justify-self: end;
+    left: 30%;
+    width: 400px;
+}
+
+.second h3 {
+    text-align: left;
+    color: #fff;
+    padding: 0px 0 10px 0;
+    cursor: pointer;
+}
+
+.second form {
+    padding: 0 5px;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #2691d9;
+    margin: 20px 0;
+}
+
+form .textarea {
+    position: relative;
+    border-bottom: 2px solid #2691d9;
+    margin: 20px 0;
+}
+
+.txt_field input {
+    color: #fff;
     width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.textarea textarea {
+    color: #fff;
+    width: 100%;
+    padding: 0 5px;
+    height: 60px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    resize: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #fff;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.textarea label {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 5px;
+    bottom: 30px;
+    color: #fff;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span:before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    color: #fff;
+}
+
+.textarea textarea:focus ~ label,
+.textarea textarea:valid ~ label {
+    top: -5px;
+    color: #fff;
+}
+
+.txt_field input:focus ~ span:before,
+.txt_field input:valid ~ span:before {
+    width: 100%;
+}
+
+.textarea textarea:focus ~ span:before,
+.textarea textarea:valid ~ span:before {
+    width: 100%;
+}
+
+.pass {
+    font-size: .9em;
+    color: #2691d9;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass label input {
+    accent-color: #2691d9;
+    margin-right: 3px;
+}
+
+.pass label textarea {
+    accent-color: #2691d9;
+    margin-right: 3px;
+}
+
+.second input[type="submit"] {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.second input[type="submit"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
 }
 
 
@@ -593,11 +749,24 @@
     #header{
         background-size: 992px 100vh;
     }
+
+    .second {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 768px){
     #header{
         background-size: 768px 100vh;
+    }
+
+    .second {
+        position: relative;
+        left: auto;
+        width: 400px;
     }
 }
 
@@ -609,10 +778,22 @@
     .headimg .headpix {
         overflow: hidden;
     }
+
+    .second {
+        position: relative;
+        left: auto;
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 576px){
     #header{
         background-size: 576px 100vh;
+    }
+
+    .second {
+        position: relative;
+        left: auto;
+        width: 400px;
     }
 }
