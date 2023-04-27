@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* root css variables */
+
+:root:not(.light) {
+    --bg-color1: #292929;
+    --bg-color2: #1c1c1c;
+    --color1: #fff;
+    --color2: #888888;
+}
+
+/* css global */
+
+*,::before
