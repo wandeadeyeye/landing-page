@@ -689,6 +689,10 @@ form .textarea {
 
 /* general changes */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container .text {
     font-size: 50px;
     font-weight: 700;
@@ -756,10 +760,6 @@ form .textarea {
     #header{
         background-size: 576px 100vh;
     }
-
-    /* .headimg .headpix {
-        overflow: hidden;
-    } */
 
     .second {
         position: relative;
