@@ -7,7 +7,7 @@
 /* navbar section */
 
 .navbar {
-    border-bottom: 3px solid #363062;
+    border-bottom: 2px solid #363062;
 }
 
 .navbar .navbar-brand {
@@ -132,7 +132,6 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    /* background: rgba(37, 35, 92, 0.5); */
     background: rgba(48, 45, 133, 0.5);
     color: #fff;
     padding: 25px;
@@ -216,7 +215,6 @@
   
 .cards:after {
     background: linear-gradient(190deg, #87adfe, #ff77cd);
-    /* background: #25235c; */
     top: .5rem;
     left: .5rem;
 }
@@ -244,7 +242,7 @@
 /* subscribtion section */
 
 #price {
-    background: #ccc9c9;
+    background: #d3d3d3;
 }
 
 .subs {
@@ -426,7 +424,8 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    background: linear-gradient(to bottom, rgba(5,176,155,0.5), rgba(150,201,61,1));
+    /* background: linear-gradient(to bottom, rgba(135, 173, 254, 0.5), rgb(255, 119, 205, 1)); */
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
